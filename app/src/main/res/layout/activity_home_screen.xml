@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen_back"
+    tools:context="com.example.user.myfirstappdemo.HomeScreenActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="musicx"
+        android:id="@+id/home_Screen_top"
+        android:textColor="#ffffff"
+        android:textSize="60dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/playbutton"
+        android:src="@drawable/icon_paused_unpressed"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginTop="490dp"
+        />
+    <ImageView
+        android:id="@+id/previousicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="13dp"
+        android:src="@drawable/icon_previous_unpressed"
+        />
+    <ImageView
+        android:id="@+id/nexticon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="304sp"
+        android:src="@drawable/icon_next_unpressed"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+    <TextView
+        android:id="@+id/outputsongname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your song"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/outputartistname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputsongname"
+        android:text="artist name"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
